@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="gbm-digital.css">
+</head>
+<body>
+		<div class="form-content" id="Contact" >
+
+		<!--Header of form-->
+
+		<img src="logos & branding\gbm_digital_plain.png" style="position: absolute; top: 3%; left: 1%; width: 150px;">
+		<h2 style="text-align: center;">Contact Form</h2>
+		<p style="text-align: center;">To enquire about one of our services or request a call back, please fill out and submit the below form. </p>
+
+		<!-- Code for form -->
+		<form action="mailto: garry_mckay123@hotmail.co.uk?subject=Email via CV Website" method="post" target="_self" >
+			<label for="firstName">First Name</label><br>
+			<input type="text" name="first_name" id="firstName" value=""><br>
+			<label for="lastName">Surname</label><br>
+			<input type="text" name="last_name" id="lastName" value=""><br>
+			<label for="email">Email address / Phone number</label><br>
+			<input type="text" name="email" id="email" value=""><br>
+			
+			<label for="message">Enter your message</label> <br>
+			<textarea name="message" id="message" style="width: 91%; height: 50px;"></textarea>
+
+
+			<input type="submit" id="submit" onmouseover="document.getElementById('submit').style.background = 'red'" onmouseleave="document.getElementById('submit').style.background = 'blue'" style="background: blue; color: white; border-radius: 10px; cursor: pointer; width: 33%; margin-left: 33%; height: 40px; font-size: 15px;">
+		</form>
+		<a href="index.html" style="color: blue; text-decoration: underline; text-align: center; display: block;">
+			Return to home page
+		</a>
+		<h1 style="color: red;">FORM UNDER DEVELOPMENT</h1>
+	</div>	
+</body>
+
+</html>

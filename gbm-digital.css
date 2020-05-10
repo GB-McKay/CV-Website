@@ -1,0 +1,207 @@
+body {
+	margin: 0;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap; 
+}
+
+.logo {
+	margin-top: 50px;
+	margin-left: 20%;
+	margin-right: 20%;
+	
+}
+
+.title-container {
+	position: absolute;
+	display: flex; 
+	flex-wrap: wrap;
+	display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+}
+
+.button {
+	height: 150px;
+	width: 150px;
+	border-radius: 50%; 
+	background: skyblue;
+	margin-right: 12px;
+	margin-bottom: 12px;
+	text-align: center;
+	color: white;
+	line-height: 150px;
+	font-size: 20px;
+	font-family: Arial;
+	cursor: pointer;
+	box-shadow: 5px 5px 5px rgba(180, 180, 180, 1);
+}
+
+
+.button:hover {
+	background: red;
+}
+
+.button:active {
+	box-shadow: none;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	font-family: Arial;
+}
+
+.nav-bar {
+	display: flex; 
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style: none;
+	margin-left: 0;
+}
+
+.popup {
+	display: none;
+	position: fixed;
+	z-index: 2; 
+	width: 80%;
+	max-height: 80%;
+	top: 5%;
+	margin-left: 10%;
+	background: white;
+	box-shadow: 5px 5px 15px grey;
+	border-radius: 15px;
+	overflow: auto;
+}
+.content {
+	display: none;
+	position: relative;
+	padding: 20px;
+	font-family: Arial;
+	margin-top: 60px;
+	margin-left: 1%;
+}
+
+.content h2 {
+	font-size: 30px;
+}
+
+.content p {
+	font-size: 18px;
+}
+
+.content li {
+	font-size: 16px;
+}
+.form-content {
+	padding: 20px;
+	font-family: Arial;
+	position: fixed;
+	z-index: 2; 
+	width: 80%;
+	max-height: 90%;
+	top: 5%;
+	margin-left: 10%;
+	background: white;
+	box-shadow: 5px 5px 15px grey;
+	border-radius: 15px;
+	overflow: auto;
+}
+
+.form-content h2 {
+	font-size: 30px;
+}
+
+.form-content p {
+	font-size: 20px;
+}
+
+input {
+	width: 91%;
+	margin: 5px;
+	height: 20px;
+	
+}
+
+label {
+	font-weight: bold;
+}
+
+.project {
+	height: 200px; 
+	width: 200px;
+	background: grey;
+	margin: 10px;
+	opacity: 66%; 
+	cursor: pointer;
+	transition: 1s;
+	color: white;
+	text-align: center; 
+	display: block;
+	font-family: Arial;
+	font-size: 30px;
+	line-height: 200px;
+}
+
+.project:hover {
+	opacity: 100%; 	
+}
+
+.close {
+	position: absolute;
+	top: 1%;
+	left: 95%; 
+	color: grey; 
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 500px){
+	.logo {
+		margin-top: 0px;
+	}
+	.content {
+		display: none;
+		position: relative;
+		padding: 20px;
+		font-family: Arial;
+		margin-top: 20%;
+		margin-left: 1%;
+	}
+
+	.ul {
+		margin-left: 0px;
+	}
+
+	.close {
+		position: absolute;
+		top: 1%;
+		left: 80%; 
+		color: grey; 
+		cursor: pointer;
+	}
+	.form-content {
+		margin-left: 20px;
+	}
+	.form-content h2 {
+		font-size: 30px;
+		margin-top: 100px;
+	}
+	.button {
+		height: 150px;
+		width: 150px;
+		border-radius: 50%; 
+		background: skyblue;
+		margin-right: 12px;
+		margin-bottom: 12px;
+		text-align: center;
+		color: white;
+		line-height: 150px;
+		font-size: 20px;
+		font-family: Arial;
+		cursor: pointer;
+		box-shadow: 5px 5px 5px rgba(180, 180, 180, 1);
+	}
+}
